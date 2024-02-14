@@ -2,19 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Foo from '@/Foo'
+import Panda from '@/Panda'
+import { css } from '../styled-system/css'
 
 function App() {
   const [count, setCount] = useState(0)
 
-  const test: string = 'test'
-
-  console.log(test)
-
   return (
     <>
-      <Foo />
-      <div>
+      <Panda />
+      <div className={css({ display: 'flex', justifyContent: 'center' })}>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
