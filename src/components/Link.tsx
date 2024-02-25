@@ -1,4 +1,4 @@
-interface LinkProps {
+type LinkProps = {
   url: string
   children: React.ReactNode
   style?: string
